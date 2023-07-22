@@ -20,7 +20,7 @@ const AvatarContainer = () => {
           <img
             src={avatar}
             alt={`Avatar ${index + 1}`}
-            className="w-12 h-12 rounded-full object-cover"
+            className="w-10 h-10 rounded-full object-cover"
           />
         </div>
       ))}

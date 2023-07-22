@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .default-box {
-    @apply flex flex-col items-start justify-center rounded-xl;
+    @apply flex flex-col items-start rounded-xl;
 }

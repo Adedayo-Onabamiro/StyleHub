@@ -5,7 +5,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 export const LatestCollections = () => {
   return (
-    <div className='border border-black flex flex-col items-center justify-evenly h-screen w-full'>
+    <div className='flex flex-col items-center justify-evenly h-screen w-full'>
         <div className='flex flex-col items-center justify-evenly'>
             <h1 className='text-black font-custom font-bold text-3xl'>Explore Our Latest Collections</h1>
             <p>Explore Latest Design Collections by our Super Creative Fashion Designers for various and diverse group of people</p>

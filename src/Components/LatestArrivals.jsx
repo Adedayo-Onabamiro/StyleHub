@@ -110,15 +110,13 @@ export const LatestArrivals = () => {
     <div className='flex flex-col items-center justify-evenly h-screen w-full'>
         <div className=' h-1/5 w-full flex flex-col items-center justify-evenly'>
             <h1 className='text-black font-custom font-bold text-3xl'>Latest Arrivals by Category</h1>
-            <div className=' flex items-center justify-center w-full h-auto'>
+            <div className=' flex items-center justify-center w-full h-1/3'>
                 {Categories.map((category, index)=>(
                     <button className='bg-transparent px-5 py-2 font-semibold text-black rounded-3xl m-8 hover:text-white hover:bg-black' key={index}> {category} </button>
                 ))}
             </div>
         </div>
-            {/* slider starts */}
-                <ImageSlider images={CatDetails} />
-            {/* slider ends */}
+        <ImageSlider images={CatDetails} />
         </div>
   )
 }

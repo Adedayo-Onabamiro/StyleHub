@@ -40,16 +40,20 @@ export const Slider = () => {
           </div>
         ))}
       </div>
-      <div className="w-1/12 h-full bg-red-400 flex items-center justify-center">
-        <input
-          type="range"
-          min="1"
-          max={options.length}
-          value={activeOption}
-          onChange={(e) => setActiveOption(parseInt(e.target.value))}
-          className="h-fit w-fit rotate-90"
-          id="myRange"
-        />
+
+
+      <div className='h-full w-8 flex flex-col border border-red-500 items-center justify-center'>
+        <div className="h-600 w-full border border-gray-900 bg-transparent flex items-center justify-center">
+          <input
+            type="range"
+            min="1"
+            max={options.length}
+            value={activeOption}
+            onChange={(e) => setActiveOption(parseInt(e.target.value))}
+            className="h-11/12 w-64 rotate-90"
+            id="myRange"
+          />
+        </div>
       </div>
     </div>
   );

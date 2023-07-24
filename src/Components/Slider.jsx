@@ -42,8 +42,8 @@ export const Slider = () => {
       </div>
 
 
-      <div className='h-full w-8 flex flex-col border border-red-500 items-center justify-center'>
-        <div className="h-600 w-full border border-gray-900 bg-transparent flex items-center justify-center">
+      <div className='h-full w-8 flex flex-col items-center justify-center'>
+        <div className="h-600 w-full bg-transparent flex items-center justify-center">
           <input
             type="range"
             min="1"

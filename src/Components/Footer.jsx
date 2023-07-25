@@ -14,30 +14,32 @@ export const Footer = () => {
 
           {/* Products section */}
           <div>
-            <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start"> Products </h6>
-            <p className="mb-4"> <a href="#!" className="text-white" > Angular </a> </p>
-            <p className="mb-4">
-            <a href="#!" className="text-white" > React </a> </p>
-            <p className="mb-4"> <a href="#!" className="text-white"> Vue </a> </p>
-            <p> <a href="#!" className="text-white"> Laravel </a> </p>
+            <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start"> Shop </h6>
+            <p className="mb-4"> Men’s Product</p>
+            <p className="mb-4"> Women’s Product </p>
+            <p className="mb-4"> Winter Edition </p>
+            <p className="mb-4">Accessories </p>
+            <p className="mb-4"> Discounts </p>
           </div>
 
-          {/* Useful links section */}
+          {/* Products section */}
           <div>
-            <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start"> Useful links </h6>
-            <p className="mb-4"> <a href="#!" className="text-white"> Pricing </a> </p>
-            <p className="mb-4"> <a href="#!" className="text-white"> Settings </a> </p>
-            <p className="mb-4"> <a href="#!" className="text-white"> Orders </a> </p>
-            <p> <a href="#!" className="text-white"> Help </a> </p>
+            <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start"> Company </h6>
+            <p className="mb-4"> About Us </p>
+            <p className="mb-4"> Careers </p>
+            <p className="mb-4"> Investors </p>
+            <p className="mb-4"> News </p>
+            <p className="mb-4"> Purpose </p>
           </div>
 
-          {/* Contact section */}
+          {/* Products section */}
           <div>
-            <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start"> Contact </h6>
-            <p className="mb-4 flex items-center justify-center md:justify-start">  New York, NY 10012, US </p>
-            <p className="mb-4 flex items-center justify-center md:justify-start">  info@example.com </p>
-            <p className="mb-4 flex items-center justify-center md:justify-start">  + 01 234 567 88 </p>
-            <p className="flex items-center justify-center md:justify-start"> + 01 234 567 89 </p>
+            <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start"> Support </h6>
+            <p className="mb-4"> Order Status</p>
+            <p className="mb-4"> Shipping and Delivery </p>
+            <p className="mb-4"> Returns </p>
+            <p className="mb-4"> Payment Option </p>
+            <p className="mb-4"> Contact </p>
           </div>
 
         </div>

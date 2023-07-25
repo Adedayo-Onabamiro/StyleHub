@@ -1,5 +1,5 @@
 import React from 'react'
-import { Slider } from './Slider'
+import { CustomSlider } from './Slider'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
@@ -12,7 +12,7 @@ export const LatestCollections = () => {
         </div>
         <div className='flex flex-row h-4/6 w-4/5 '>
             <div className='w-1/2 m-5 h-auto bg-transparent flex items-center justify-center'>
-            <Slider></Slider>
+            <CustomSlider></CustomSlider>
             </div>
             <div className='w-1/2 m-5 h-auto bg-red-600 flex flex-col rounded-xl justify-center items-center'>
                 <div className="relative w-full h-full rounded-xl overflow-hidden">

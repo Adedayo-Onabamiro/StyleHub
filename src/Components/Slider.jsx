@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import Slider from '@mui/material/Slider';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-export const Slider = () => {
+export const CustomSlider = () => {
   const [activeOption, setActiveOption] = useState(1);
 
   const options = [
@@ -22,6 +24,35 @@ export const Slider = () => {
     },
   ];
 
+  const valuetext = (value) => {
+    return `${value}`;
+  };
+
+  const handleSliderChange = (event, value) => {
+    setActiveOption(options.length - value + 1);
+  };
+
+  // Define the custom theme for the Slider
+  const theme = createTheme({
+    components: {
+      MuiSlider: {
+        styleOverrides: {
+          rail: {
+            backgroundColor: '#ccc', // Grey color for the unfilled track
+          },
+          track: {
+            backgroundColor: 'black', // Black color for the filled track
+          },
+          thumb: {
+            width: 16, // Custom thumb width
+            height: 16, // Custom thumb height
+            backgroundColor: 'black', // Black color for the thumb
+          },
+        },
+      },
+    },
+  });
+
   return (
     <div className="flex items-start h-full w-full">
       <div className="w-11/12 h-full p-4 rounded-xl bg-transparent mr-4 flex flex-col justify-between">
@@ -41,21 +72,23 @@ export const Slider = () => {
         ))}
       </div>
 
-
-      <div className='h-full w-8 flex flex-col items-center justify-center'>
-        <div className="h-600 w-full bg-transparent flex items-center justify-center">
-          <input
-            type="range"
-            min="1"
-            max={options.length}
-            value={activeOption}
-            onChange={(e) => setActiveOption(parseInt(e.target.value))}
-            className="h-11/12 w-64 rotate-90"
-            id="myRange"
-          />
+      <div className="h-full w-8 flex flex-col items-center justify-center">
+        <div className="h-full bg-transparent flex items-center justify-center">
+          <ThemeProvider theme={theme}>
+            <Slider
+              aria-label="range"
+              orientation="vertical"
+              getAriaValueText={valuetext}
+              valueLabelDisplay="off"
+              defaultValue={options.length} // Start the Slider at the last option
+              value={options.length - activeOption + 1} // Inverted Slider value
+              onChange={handleSliderChange} // Use the custom handler to invert the value
+              min={1}
+              max={options.length}
+            />
+          </ThemeProvider>
         </div>
       </div>
     </div>
   );
 };
-

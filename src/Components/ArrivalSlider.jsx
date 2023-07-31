@@ -43,7 +43,7 @@ export const ArrivalSlider = () => {
 
   return (
     <Swiper
-      slidesPerView={3}
+      slidesPerView={3.2}
       spaceBetween={30}
       freeMode={true}
       pagination={false} // Remove the pagination dots
@@ -52,9 +52,9 @@ export const ArrivalSlider = () => {
     >
       {/* Iterate through each item in CatDetails */}
       {CatDetails.map((item, index) => (
-        <SwiperSlide key={index} className="bg-transparent flex justify-center items-center">
+        <SwiperSlide key={index} className="bg-transparentflex justify-center items-center">
           <div
-            className="max-w-xs m-5 bg-white border border-gray-300 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300"
+            className="max-w-xs m-1 bg-white border border-gray-300 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300"
             style={{ scrollSnapAlign: 'center' }}
           >
             {/* Top of the card with the pill div */}
@@ -82,9 +82,9 @@ export const ArrivalSlider = () => {
 
               {/* Black button with Font Awesome arrow */}
               <div className="w-1/2 flex items-end justify-end">
-                <button className="bg-black text-white px-6 py-3 rounded-3xl flex items-center">
+                <button className="bg-black text-white px-5 py-3 rounded-3xl flex items-center">
                   <FontAwesomeIcon
-                    className="font-custom text-2xl"
+                    className="font-custom text-xl"
                     icon={faArrowRight}
                   />
                 </button>

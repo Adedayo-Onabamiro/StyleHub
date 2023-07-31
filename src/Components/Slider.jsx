@@ -55,7 +55,7 @@ export const CustomSlider = () => {
 
   return (
     <div className="flex items-start h-full w-full">
-      <div className="w-11/12 h-full p-4 rounded-xl bg-transparent mr-4 flex flex-col justify-between">
+      <div className="w-11/12 h-full rounded-xl bg-transparent mr-4 flex flex-col justify-between">
         {options.map((option, index) => (
           <div
             key={index}
@@ -64,7 +64,7 @@ export const CustomSlider = () => {
             }`}
             onClick={() => setActiveOption(index + 1)}
           >
-            <h1 className="text-3xl font-bold font-custom">{option.title}</h1>
+            <h1 className="text-2xl lg:text-3xl font-bold font-custom">{option.title}</h1>
             {activeOption === index + 1 && (
               <p className="mt-2">{option.description}</p>
             )}

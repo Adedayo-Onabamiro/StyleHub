@@ -7,15 +7,15 @@ export const Holiday = () => {
     <div className='flex flex-col items-center justify-evenly h-auto md:h-screen w-full'>
 
         {/* Save 50% section */}
-        <div className='flex flex-col md:flex-row h-4/6 w-11/12 rounded-3xl bg-[#B1D7DA]'>
+        <div className='flex flex-col md:flex-row h-auto w-11/12 rounded-3xl bg-[#B1D7DA]'>
             <div className='w-full md:w-1/2 p-5 h-auto flex flex-col items-start justify-center'>
                 <h1 className='text-black font-custom font-bold text-3xl'>Save 50% this Holiday Season</h1>
                 <p>It’s time to revamp your fashion game without breaking the bank! Dive into our exclusive 50% off sale and discover unbeatable deals on the most coveted styles</p>
                 <button className=" text-white bg-black rounded-full px-6 py-3 my-6 flex items-center"> Shop Now <FontAwesomeIcon className=' px-1 font-custom' icon={faArrowRight} /> </button>
             </div>
-            <div className='w-full md:w-1/2 bg-red-500 flex flex-col rounded-xl justify-center items-center'>
+            <div className='w-full md:w-1/2 bg-transparent flex flex-col rounded-xl justify-center items-center'>
                 <div className="relative w-full h-full rounded-xl ">
-                    <img className="object-cover h-full w-full rounded-xl" alt='Save 50%' src='./img/s1.jfif' />
+                    <img className="object-cover h-[400px] w-full rounded-xl" alt='Save 50%' src='./img/s1.jfif' />
                 </div>
             </div>
           

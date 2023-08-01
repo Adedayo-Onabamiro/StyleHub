@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ArrivalSlider } from './ArrivalSlider';
+import { ASlider } from './ASlider';
 
 export const LatestArrivals = () => {
 
@@ -57,8 +58,8 @@ export const LatestArrivals = () => {
             </div>
         </div>
         {/* <ImageSlider images={CatDetails} /> */}
-        <div className='w-full md:w-11/12 lg:w-5/6 h-3/5 bg-transparent flex flex-row items-center justify-center px-12 py-3 cursor-grab hover:cursor-grabbing'>
-          <ArrivalSlider></ArrivalSlider>
+        <div className='w-full md:w-11/12 lg:w-5/6 h-3/5 bg-transparent flex flex-row items-center justify-center py-3 cursor-grab hover:cursor-grabbing'>
+          <ASlider></ASlider>
         </div>
         </div>
   )

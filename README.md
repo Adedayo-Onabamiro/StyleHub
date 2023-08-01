@@ -1,4 +1,4 @@
-![Screenshot](./img/Frame 181.png)
+![Screenshot](https://github.com/Adedayo-Onabamiro/StyleHub/blob/master/public/img/stylehubsc.png)
 
 # Style Hub
 

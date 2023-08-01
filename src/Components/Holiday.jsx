@@ -4,7 +4,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 export const Holiday = () => {
   return (
-    <div className='flex flex-col items-center justify-evenly h-auto md:h-screen w-full'>
+    <div className='flex flex-col items-center justify-evenly h-auto my-12 w-full'>
 
         {/* Save 50% section */}
         <div className='flex flex-col md:flex-row h-auto w-11/12 rounded-3xl bg-[#B1D7DA]'>
